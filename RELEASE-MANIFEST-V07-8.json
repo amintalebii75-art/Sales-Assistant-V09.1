@@ -1,0 +1,15 @@
+{
+  "version": "V07.8.0",
+  "base": "V07.7.0",
+  "database_migration_required": false,
+  "new_files": [
+    "pilot_test.php",
+    "assets/css/v07-pilot-test.css",
+    "assets/js/v07-pilot-test.js"
+  ],
+  "modified_files": [
+    "index.php",
+    "manager.php"
+  ],
+  "purpose": "integrated_pilot_smoke_test"
+}

@@ -1,0 +1,15 @@
+V06.0.1 CANCELLED ASSIGNMENT ENDPOINT RUNTIME
+STATUS: NOT RUN
+
+Reason:
+- No MySQL/MariaDB service or client is available in the build environment.
+- PHP modules pdo_mysql and mysqli are not installed.
+- Therefore an authenticated Marketer/Center Call session and a real cancelled row could not be created.
+
+Executed instead (not a substitute for DB runtime):
+- PHP policy runtime: cancelled -> pending/completed rejected.
+- Static endpoint regression: update_my_assignment checks current cancelled status.
+- Static ownership regression: assignment id is bound to current session user.
+- Static manager reactivate/revision/audit/history checks.
+
+Required Staging test remains mandatory before Production.

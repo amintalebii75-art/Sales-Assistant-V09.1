@@ -1,0 +1,5 @@
+V06 CONCURRENCY / CONFLICT RUNTIME VALIDATION
+Status: NOT RUN
+Reason: Two authenticated database-backed sessions could not be created.
+Static checks confirmed independent revision columns and HTTP 409 conflict handling.
+Real lost-update prevention remains to be validated on Staging.

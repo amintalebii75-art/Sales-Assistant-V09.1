@@ -1,0 +1,21 @@
+{
+  "validation_stage": "release tree immediately before final packaging",
+  "release_root": "Sales-Assistant-V06-0-3-Localhost-Security-Fix",
+  "index_php_direct": true,
+  "nested_same_name": false,
+  "real_config_present": false,
+  "real_ai_config_present": false,
+  "file_count_including_existing_manifest": 136,
+  "extension_counts": {
+    ".css": 14,
+    ".js": 14,
+    ".json": 11,
+    ".md": 19,
+    ".php": 27,
+    ".sql": 8,
+    ".txt": 39,
+    ".xlsx": 1,
+    "[no_extension]": 3
+  },
+  "status": "PASS"
+}

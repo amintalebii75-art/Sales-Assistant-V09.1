@@ -1,0 +1,4 @@
+V06 HTTP asset validation
+/assets/css/planning.css HTTP=200 BYTES=11678
+/assets/js/planning.js HTTP=200 BYTES=34200
+/assets/js/planning-tasks-integration.js HTTP=200 BYTES=3972

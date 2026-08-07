@@ -1,0 +1,43 @@
+V06 Chromium real runtime retry
+STATUS=BLOCKED
+EXIT=124
+DOM_BYTES=0
+LOGIN_TITLE_MATCH=no
+PHP_REQUEST_MATCH=no
+--- STDERR (sanitized first 80 lines) ---
+[2215:2243:0726/043629.414795:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[2215:2243:0726/043629.418570:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2215:2243:0726/043629.418660:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[2215:2243:0726/043629.418672:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[2215:2243:0726/043629.433541:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2215:2243:0726/043629.444990:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2215:2215:0726/043629.456405:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2215:2243:0726/043629.456730:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2215:2215:0726/043629.457371:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2215:2215:0726/043629.472875:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2215:2243:0726/043629.487808:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2215:2243:0726/043629.531815:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[2215:2215:0726/043629.531828:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2215:2243:0726/043629.531839:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[2215:2215:0726/043629.555385:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2215:2243:0726/043629.555516:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2215:2215:0726/043629.561644:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: unknown error type: 
+[2215:2215:0726/043629.564530:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2215:2243:0726/043629.564640:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2215:2215:0726/043629.566556:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2215:2243:0726/043629.566692:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2215:2215:0726/043629.566960:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2215:2243:0726/043629.567148:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[2215:2215:0726/043629.567714:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[2215:2215:0726/043654.356084:ERROR:content/common/zygote/zygote_communication_linux.cc:293] Failed to send GetTerminationStatus message to zygote
+--- PHP LOG ---
+[Sun Jul 26 04:36:28 2026] PHP 8.4.16 Development Server (http://127.0.0.1:8773) started
+[Sun Jul 26 04:36:29 2026] 127.0.0.1:43674 Accepted
+[Sun Jul 26 04:36:29 2026] 127.0.0.1:43674 Closed without sending a request; it was probably just an unused speculative preconnection
+[Sun Jul 26 04:36:29 2026] 127.0.0.1:43674 Closing
+[Sun Jul 26 04:36:29 2026] 127.0.0.1:43676 Accepted
+[Sun Jul 26 04:36:29 2026] 127.0.0.1:43692 Accepted
+[Sun Jul 26 04:36:54 2026] 127.0.0.1:43676 Closed without sending a request; it was probably just an unused speculative preconnection
+[Sun Jul 26 04:36:54 2026] 127.0.0.1:43676 Closing
+[Sun Jul 26 04:36:54 2026] 127.0.0.1:43692 Closed without sending a request; it was probably just an unused speculative preconnection
+[Sun Jul 26 04:36:54 2026] 127.0.0.1:43692 Closing

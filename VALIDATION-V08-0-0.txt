@@ -1,0 +1,12 @@
+Validation Summary — V08.0.0 Full Integrated Localhost Pilot
+
+PASS — PHP syntax: all 29 PHP files
+PASS — JavaScript syntax: all 18 JavaScript files
+PASS — required entrypoints and V07/V08 assets present
+PASS — config.php is not bundled
+PASS — create_admin.php is not bundled
+PASS — font binaries are not bundled
+PASS — visible release version updated to V08.0
+PASS — no database migration required for an existing V06.0.9-compatible database
+
+Runtime with the user's actual XAMPP database is intentionally pending.

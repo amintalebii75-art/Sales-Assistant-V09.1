@@ -1,0 +1,108 @@
+{
+    "suite": "V06.0.3 Localhost Security Regression",
+    "generated_at": "2026-08-04T00:16:10+00:00",
+    "pass": 20,
+    "fail": 0,
+    "results": [
+        {
+            "name": "unsafe staging helpers removed",
+            "status": "PASS",
+            "detail": "none present"
+        },
+        {
+            "name": "users page has no pre-auth state mutation",
+            "status": "PASS",
+            "detail": "no direct write path"
+        },
+        {
+            "name": "custom roles are not created from UI",
+            "status": "PASS",
+            "detail": "fixed server roles preserved"
+        },
+        {
+            "name": "team creation uses official API action",
+            "status": "PASS",
+            "detail": "API and UI wired"
+        },
+        {
+            "name": "team creation requires real manager permission",
+            "status": "PASS",
+            "detail": "manager + permissions.manage"
+        },
+        {
+            "name": "team creation uses CSRF-protected POST flow",
+            "status": "PASS",
+            "detail": "global POST CSRF guard"
+        },
+        {
+            "name": "team creation uses optimistic locking",
+            "status": "PASS",
+            "detail": "expected revision + row lock"
+        },
+        {
+            "name": "team creation records backup",
+            "status": "PASS",
+            "detail": "backup operation registered"
+        },
+        {
+            "name": "team creation records audit",
+            "status": "PASS",
+            "detail": "audit event registered"
+        },
+        {
+            "name": "inactive team member is not valid for login scope",
+            "status": "PASS",
+            "detail": "inactive member rejected"
+        },
+        {
+            "name": "session cookie is isolated and hardened",
+            "status": "PASS",
+            "detail": "custom name + strict mode + app path"
+        },
+        {
+            "name": "login POST is CSRF protected",
+            "status": "PASS",
+            "detail": "login form token + server verification"
+        },
+        {
+            "name": "initial admin creation is CSRF protected",
+            "status": "PASS",
+            "detail": "setup token + CSRF required"
+        },
+        {
+            "name": "planning excludes invalid team members",
+            "status": "PASS",
+            "detail": "eligible recipients require active team record"
+        },
+        {
+            "name": "planning accepts initial revision zero",
+            "status": "PASS",
+            "detail": "first update can use revision 0"
+        },
+        {
+            "name": "nonexistent team manager link removed",
+            "status": "PASS",
+            "detail": "no dead link"
+        },
+        {
+            "name": "customer access rendering typo removed",
+            "status": "PASS",
+            "detail": "customers.map used"
+        },
+        {
+            "name": "localhost config sample exists",
+            "status": "PASS",
+            "detail": "sample present; real config absent"
+        },
+        {
+            "name": "test and evidence web access blocked",
+            "status": "PASS",
+            "detail": "root rule + directory deny files present"
+        },
+        {
+            "name": "sensitive file extensions blocked",
+            "status": "PASS",
+            "detail": "FilesMatch deny rule present"
+        }
+    ]
+}

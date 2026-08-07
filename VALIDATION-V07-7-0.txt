@@ -1,0 +1,19 @@
+VALIDATION — V07.7.0
+
+PASS — PHP syntax: all PHP files parsed successfully with PHP 8.4.16.
+PASS — JavaScript syntax: project JS files and the main inline index script parsed successfully with Node 22.16.0.
+PASS — V06 policy regression suite.
+PASS — V06.0.4 Jalali static/runtime contract tests.
+PASS — V06.0.5 team result and call-center handoff tests.
+PASS — V06.0.3 localhost/security regression after updating the release test for intentional omission of create_admin.php.
+PASS — New settings CSS and JS are linked from index.php.
+PASS — Malformed CSS link from the prior build is fixed.
+PASS — Real config.php and create_admin.php are absent from the release.
+PASS — No database migration is introduced.
+
+NOT RUN — Full browser runtime against the user's XAMPP database.
+NOT RUN — Production hosting, HTTPS and cPanel configuration.
+NOT RUN — Destructive Restore against real data.
+
+KNOWN OPEN POLICY ITEM FROM THE V06.0.9 BASELINE
+The legacy V05.2 test SM-03 expects a View-only user to be unable to register an interaction. The current baseline contains the previously documented call-center View-to-Call promotion behavior. V07.7 does not change this backend behavior.

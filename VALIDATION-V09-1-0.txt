@@ -1,0 +1,28 @@
+VALIDATION V09.1.0 — Configurable Forms and Base Data
+Generated: 2026-08-05T17:34:51.882704+00:00
+
+PHP syntax: 35 files PASS
+JavaScript syntax: 20 files PASS
+
+Test suites:
+- V05.2 RBAC Data Boundary: 27 PASS / 0 FAIL (v05_2_policy_tests.json)
+- V06.0.3 Localhost Security Regression: 20 PASS / 0 FAIL (v06_0_3_localhost_security_tests.json)
+- V06.0.4 Jalali Date Selectors: 8 PASS / 0 FAIL
+- V06.0.5 Team Results, Handoff and Font: 7 PASS / 0 FAIL (v06_0_5_team_results_tests.json)
+- v06_policy_tests: 47 PASS / 0 FAIL (v06_policy_tests.json)
+- V09.1 Configurable Forms and Base Data: 20 PASS / 0 FAIL (v09_1_configurable_forms_tests.json)
+- V09 Host Pilot/PWA Complete: 22 PASS / 0 FAIL (v09_pilot_complete_tests.json)
+
+Static/Policy result: PASS
+Runtime XAMPP result: NOT RUN — requires the user database, sessions and browser.
+Database migration: NONE
+Bundled font binaries: NONE
+
+Implemented scope:
+- Manager field visibility / required / role visibility
+- Managed base-data lists and + option flow
+- manager_only / approval / direct add modes
+- Pending approval and active/inactive lifecycle
+- Customer and negotiation form integration
+- Server-side normalization and RBAC ceiling
+- PWA cache update

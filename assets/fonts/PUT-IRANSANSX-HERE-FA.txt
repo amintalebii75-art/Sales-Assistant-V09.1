@@ -1,0 +1,9 @@
+فونت رابط کاربری روی IRANSansXFaNum تنظیم شده است.
+
+برای فعال‌شدن کامل فونت در localhost، این چهار فایل را که خودتان در اختیار دارید داخل همین پوشه کپی کنید:
+- IRANSansXFaNum-Regular.ttf
+- IRANSansXFaNum-Medium.ttf
+- IRANSansXFaNum-DemiBold.ttf
+- IRANSansXFaNum-Bold.ttf
+
+اگر فایل‌ها کپی نشوند، رابط با فونت جایگزین سیستم نمایش داده می‌شود.

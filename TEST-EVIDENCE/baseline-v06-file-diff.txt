@@ -1,0 +1,25 @@
+V06 baseline executable/document comparison (TEST-EVIDENCE excluded)
+Added: 11
+Modified: 4
+Removed: 0
+
+[ADDED]
+CHANGELOG-V06.md
+INSTALL-V06.md
+ROLLBACK-V06.sql
+TEST-REPORT-V06.md
+assets/css/planning.css
+assets/js/planning-tasks-integration.js
+assets/js/planning.js
+planning.php
+planning_api.php
+tests/v06_policy_tests.php
+v06_four_week_planning_migration.sql
+
+[MODIFIED]
+index.php
+manager.php
+permissions.php
+schema.sql
+
+[REMOVED]

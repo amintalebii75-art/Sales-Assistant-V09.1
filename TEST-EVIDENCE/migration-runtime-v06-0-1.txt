@@ -1,0 +1,11 @@
+V06.0.1 MYSQL/MARIADB MIGRATION RUNTIME
+STATUS: NOT RUN
+
+Environment facts:
+- mysql client: unavailable
+- mariadb client: unavailable
+- PHP pdo_mysql: unavailable
+- PHP mysqli: unavailable
+
+The first run, second run/idempotency, foreign keys, history insert/recovery and rollback were not executed on a real database.
+Static SQL validation and syntax-oriented inspection do not replace this test.

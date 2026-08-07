@@ -1,0 +1,15 @@
+V06 STAGING ENVIRONMENT — SANITIZED
+Environment type: isolated local container; no Production connection configured
+PHP: 8.4.16 CLI / built-in HTTP server
+Node: v22.16.0
+Chromium: 144.0.7559.96 (binary available; runtime validation blocked/timed out)
+PDO core: available
+pdo_mysql: unavailable
+mysqli: unavailable
+MySQL client/server: unavailable
+MariaDB client/server: unavailable
+HTTPS: not available in local container
+Real config.php in package: no
+Real ai_config.php in package: no
+Production/customer data used: no
+Database backup: BLOCKED — no database service exists in this environment

@@ -1,0 +1,26 @@
+Only in V06.0.1: CHANGELOG-V06-0-1.md
+Only in V06.0.1: INSTALL-V06-0-1.md
+Files BASELINE/ROLLBACK-V06.sql and V06.0.1/ROLLBACK-V06.sql differ
+Only in V06.0.1/TEST-EVIDENCE: asset-paths-v06-0-1.json
+Only in V06.0.1/TEST-EVIDENCE: browser-runtime-v06-0-1.txt
+Only in V06.0.1/TEST-EVIDENCE: cancelled-assignment-runtime-v06-0-1.txt
+Only in V06.0.1/TEST-EVIDENCE: copy-plan-v06-0-1.txt
+Only in V06.0.1/TEST-EVIDENCE: inline-javascript-v06-0-1.json
+Only in V06.0.1/TEST-EVIDENCE: javascript-syntax-v06-0-1.txt
+Only in V06.0.1/TEST-EVIDENCE: migration-runtime-v06-0-1.txt
+Only in V06.0.1/TEST-EVIDENCE: php-runtime-v06-0-1.txt
+Only in V06.0.1/TEST-EVIDENCE: php-syntax-v06-0-1.txt
+Only in V06.0.1/TEST-EVIDENCE: policy-test-results.json
+Only in V06.0.1/TEST-EVIDENCE: policy-test-results.md
+Only in V06.0.1/TEST-EVIDENCE: secret-scan-v06-0-1.txt
+Only in V06.0.1/TEST-EVIDENCE: v05-2-regression-v06-0-1.json
+Only in V06.0.1/TEST-EVIDENCE: v06-0-1-policy-results.json
+Only in V06.0.1/TEST-EVIDENCE: weighted-progress-v06-0-1.txt
+Only in V06.0.1: TEST-REPORT-V06-0-1.md
+Files BASELINE/assets/js/planning-tasks-integration.js and V06.0.1/assets/js/planning-tasks-integration.js differ
+Files BASELINE/assets/js/planning.js and V06.0.1/assets/js/planning.js differ
+Files BASELINE/planning_api.php and V06.0.1/planning_api.php differ
+Only in V06.0.1: planning_policy.php
+Files BASELINE/schema.sql and V06.0.1/schema.sql differ
+Files BASELINE/tests/v06_policy_tests.php and V06.0.1/tests/v06_policy_tests.php differ
+Files BASELINE/v06_four_week_planning_migration.sql and V06.0.1/v06_four_week_planning_migration.sql differ

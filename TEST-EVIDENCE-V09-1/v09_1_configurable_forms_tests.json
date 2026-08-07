@@ -1,0 +1,128 @@
+{
+    "suite": "V09.1 Configurable Forms and Base Data",
+    "generated_at": "2026-08-05T17:34:51+00:00",
+    "pass": 20,
+    "fail": 0,
+    "results": [
+        {
+            "id": "FC-01",
+            "title": "فیلدهای سیستمی قابل خاموش‌شدن نیستند",
+            "status": "PASS",
+            "detail": "name/customer/results locked"
+        },
+        {
+            "id": "FC-02",
+            "title": "مدیر می‌تواند فیلد غیرسیستمی را مخفی و اجباری کند",
+            "status": "PASS",
+            "detail": "city config retained"
+        },
+        {
+            "id": "FC-03",
+            "title": "نمایش فیلد برای نقش‌ها مستقل ذخیره می‌شود",
+            "status": "PASS",
+            "detail": "role visibility retained"
+        },
+        {
+            "id": "FC-04",
+            "title": "MasterKey فقط از فهرست مجاز پذیرفته می‌شود",
+            "status": "PASS",
+            "detail": "route accepted"
+        },
+        {
+            "id": "MD-01",
+            "title": "گزینه تکراری اطلاعات پایه حذف می‌شود",
+            "status": "PASS",
+            "detail": "duplicate label removed"
+        },
+        {
+            "id": "MD-02",
+            "title": "حالت پیشنهاد با تأیید مدیر حفظ می‌شود",
+            "status": "PASS",
+            "detail": "approval/pending"
+        },
+        {
+            "id": "MD-03",
+            "title": "حالت افزودن نامعتبر به حالت امن برمی‌گردد",
+            "status": "PASS",
+            "detail": "unsafe mode rejected"
+        },
+        {
+            "id": "MD-04",
+            "title": "گزینه در انتظار برای کاربر عادی نمایش داده نمی‌شود",
+            "status": "PASS",
+            "detail": "pending hidden"
+        },
+        {
+            "id": "SEC-01",
+            "title": "سطح Call اطلاعات مالی و سفارشی پرونده را دریافت نمی‌کند",
+            "status": "PASS",
+            "detail": "id,name,company,contact,phone,phone2,city,province,industry,product,stage,nextFollowUp,status"
+        },
+        {
+            "id": "SEC-02",
+            "title": "سطح Edit فیلدهای جدید مشتری را دریافت می‌کند",
+            "status": "PASS",
+            "detail": "custom customer fields allowed for edit"
+        },
+        {
+            "id": "SEC-03",
+            "title": "مرکز تماس اطلاعات پایه مذاکره را ثبت می‌کند اما فیلد مالی ندارد",
+            "status": "PASS",
+            "detail": "id,customerId,channel,date,resultIds,note,nextFollowUp,duration,status,contactFor,route,currency"
+        },
+        {
+            "id": "SEC-04",
+            "title": "سطح View به Call ارتقا داده نمی‌شود",
+            "status": "PASS",
+            "detail": "hard ceiling"
+        },
+        {
+            "id": "UI-01",
+            "title": "صفحه مدیریت فرم‌ها و اطلاعات پایه در منوی مدیر وجود دارد",
+            "status": "PASS",
+            "detail": "menu and page"
+        },
+        {
+            "id": "UI-02",
+            "title": "CSS و JavaScript نسخه V09.1 بارگذاری می‌شوند",
+            "status": "PASS",
+            "detail": "assets present"
+        },
+        {
+            "id": "UI-03",
+            "title": "فرم مشتری و مذاکره از تنظیمات پویا استفاده می‌کنند",
+            "status": "PASS",
+            "detail": "dynamic renderers"
+        },
+        {
+            "id": "UI-04",
+            "title": "کاربر مجاز می‌تواند با دکمه مثبت گزینه پیشنهاد کند",
+            "status": "PASS",
+            "detail": "plus/add endpoint"
+        },
+        {
+            "id": "UI-05",
+            "title": "مدیر می‌تواند نمایش، اجبار و نقش‌ها را تنظیم کند",
+            "status": "PASS",
+            "detail": "manager controls"
+        },
+        {
+            "id": "UI-06",
+            "title": "خاموش‌کردن گزینه داده قبلی را حذف نمی‌کند",
+            "status": "PASS",
+            "detail": "status based deactivation"
+        },
+        {
+            "id": "PWA-01",
+            "title": "Service Worker دارایی‌های V09.1 را Cache می‌کند",
+            "status": "PASS",
+            "detail": "cache updated"
+        },
+        {
+            "id": "PKG-01",
+            "title": "فایل باینری فونت داخل بسته قرار نگرفته است",
+            "status": "PASS",
+            "detail": "font binaries absent"
+        }
+    ]
+}

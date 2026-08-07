@@ -1,0 +1,13 @@
+V06.0.8 Visible Selected Negotiation Results — Validation
+
+PASS — PHP syntax: index.php
+PASS — Inline JavaScript syntax
+PASS — Existing V06.0.5 team-results tests: 7/7
+PASS — Existing V06.0.4 Jalali date tests: 8/8
+PASS — Selected buttons expose aria-pressed
+PASS — Click updates active class and aria-pressed
+PASS — Active selection has strong background, white text, border, shadow and check mark
+PASS — Selected results summary shows count and labels
+
+No database migration required.
+Runtime browser confirmation is required after applying the Patch on XAMPP.

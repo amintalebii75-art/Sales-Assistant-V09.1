@@ -1,0 +1,22 @@
+(function(){
+'use strict';
+function init(){
+ const wrap=document.querySelector('.manager-page .wrap');if(!wrap||document.querySelector('.manager-workspace-nav'))return;
+ const defs=[['command','مرکز فرمان مدیر'],['performance','عملکرد تیم'],['customers','مشتریان و قیف'],['issues','پیگیری‌ها و سفارش‌های مسئله‌دار'],['team','اعضای تیم و دسترسی‌ها'],['smart','ابزارهای هوشمند'],['system','وضعیت سیستم و پشتیبان']];
+ const nav=document.createElement('nav');nav.className='manager-workspace-nav';nav.setAttribute('aria-label','بخش‌های داشبورد مدیر');const panels={};
+ defs.forEach(([id,label],i)=>{const b=document.createElement('button');b.type='button';b.dataset.managerTarget=id;b.textContent=label;b.classList.toggle('active',i===0);nav.appendChild(b);const p=document.createElement('section');p.className='manager-workspace-panel'+(i===0?' active':'');p.dataset.managerPanel=id;panels[id]=p});
+ wrap.parentNode.insertBefore(nav,wrap);let mode='command';
+ [...wrap.children].forEach(node=>{const title=(node.querySelector?.('h2')?.textContent||'').trim();if(node.id==='users-access')mode='team';else if(node.id==='smart-tools')mode='smart';else if(node.id==='backup')mode='system';else if(/نیازمند تصمیم|پیگیری‌های عقب/.test(title))mode='issues';else if(/مشتریان و قیف/.test(title))mode='customers';else if(/وضعیت اعضای تیم/.test(title))mode='team';else if(/روند ۱۲ هفته|تحلیل هفته|پیشرفت کلی برنامه/.test(title)||node.id==='week-detail')mode='performance';panels[mode].appendChild(node)});
+ wrap.replaceChildren(...defs.map(([id])=>panels[id]));
+ const intro=document.createElement('div');intro.className='manager-command-intro';intro.innerHTML='<div><span class="v04-kicker">مرکز فرمان مدیر</span><h1>مواردی که اکنون نیازمند توجه‌اند</h1><p>هشدارها، کارهای متوقف، مشتریان بدون پیگیری و خلاصه عملکرد تیم</p></div>';panels.command.prepend(intro);
+ const stats=[...panels.command.querySelectorAll('.stat')].slice(0,4);if(stats.length){const s=document.createElement('div');s.className='manager-command-summary';stats.forEach(x=>{const i=document.createElement('div');i.className='summary-item';i.innerHTML=`<small>${x.querySelector('span')?.textContent||'شاخص'}</small><b>${x.querySelector('b')?.textContent||'—'}</b>`;s.appendChild(i)});intro.after(s)}
+ const preview=document.createElement('div');[...panels.issues.children].slice(0,4).forEach(n=>preview.appendChild(n.cloneNode(true)));if(preview.children.length)panels.command.appendChild(preview);const members=panels.team.querySelector('.member-grid');if(members){const block=document.createElement('section');block.innerHTML='<div class="section-head"><div><h2>خلاصه عملکرد افراد</h2><p>نمای کوتاه از اعضای فعال؛ جزئیات کامل در تب اعضای تیم است.</p></div></div>';const grid=document.createElement('div');grid.className='member-grid';[...members.children].slice(0,3).forEach(n=>grid.appendChild(n.cloneNode(true)));block.appendChild(grid);panels.command.appendChild(block)}
+ for(const id of ['issues','customers','performance'])if(!panels[id].children.length)panels[id].innerHTML='<div class="manager-panel-empty">برای این بخش هنوز داده کافی ثبت نشده است.</div>';
+ const access=panels.team.querySelector('#users-access');if(access){const note=document.createElement('div');note.className='manager-access-note';note.textContent='این بخش «اعضای تیم و دسترسی نمایشی» است. Role و Permission واقعی سمت Backend در V05 تکمیل می‌شوند و در این نسخه امکان ویرایش عملیاتی دسترسی شبیه‌سازی نشده است.';access.querySelector('.section-head')?.after(note)}
+ function activate(id,focus=false){defs.forEach(([x])=>panels[x].classList.toggle('active',x===id));nav.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.managerTarget===id));if(focus)nav.querySelector(`[data-manager-target="${id}"]`)?.focus();window.scrollTo({top:0,behavior:'smooth'})}
+ nav.addEventListener('click',e=>{const b=e.target.closest('button[data-manager-target]');if(b)activate(b.dataset.managerTarget)});
+ nav.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;const bs=[...nav.querySelectorAll('button')],cur=bs.indexOf(document.activeElement);let n=cur;if(e.key==='Home')n=0;else if(e.key==='End')n=bs.length-1;else n=(cur+(e.key==='ArrowLeft'?1:-1)+bs.length)%bs.length;e.preventDefault();activate(bs[n].dataset.managerTarget,true)});
+ window.V041Manager={activate};
+}
+document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init();
+})();

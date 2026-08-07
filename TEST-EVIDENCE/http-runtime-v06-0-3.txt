@@ -1,0 +1,68 @@
+{
+  "suite": "V06.0.3 unauthenticated HTTP runtime",
+  "base_path": "/Sales-Assistant-V06-0-3-Localhost-Security-Fix/",
+  "checks": [
+    {
+      "path": "/login.php",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "body_prefix": "<!DOCTYPE html><html lang=\"fa\" dir=\"rtl\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width,i"
+    },
+    {
+      "path": "/index.php",
+      "method": "GET",
+      "status": 302,
+      "location": "login.php",
+      "body_prefix": ""
+    },
+    {
+      "path": "/planning.php",
+      "method": "GET",
+      "status": 302,
+      "location": "login.php",
+      "body_prefix": ""
+    },
+    {
+      "path": "/users.php",
+      "method": "GET",
+      "status": 302,
+      "location": "login.php",
+      "body_prefix": ""
+    },
+    {
+      "path": "/api.php?action=state",
+      "method": "GET",
+      "status": 401,
+      "location": null,
+      "body_prefix": "{\"ok\":false,\"error\":\"not_logged_in\"}"
+    },
+    {
+      "path": "/users_api.php?action=bootstrap",
+      "method": "GET",
+      "status": 401,
+      "location": null,
+      "body_prefix": "{\"ok\":false,\"error\":\"not_logged_in\"}"
+    },
+    {
+      "path": "/planning_api.php",
+      "method": "POST",
+      "status": 401,
+      "location": null,
+      "body_prefix": "{\"ok\":false,\"error\":\"not_logged_in\"}"
+    },
+    {
+      "path": "/login.php",
+      "method": "POST invalid CSRF",
+      "status": 200,
+      "csrf_error_present": true
+    }
+  ],
+  "cookie": {
+    "name": "HIPPOSESSID",
+    "httponly": true,
+    "samesite_lax": true,
+    "path": "/Sales-Assistant-V06-0-3-Localhost-Security-Fix/"
+  },
+  "status": "PASS"
+}

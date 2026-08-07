@@ -1,0 +1,9 @@
+V07.3.0 validation
+
+PASS: JavaScript syntax — assets/js/v07-customer-profile.js
+PASS: PHP syntax — index.php
+PASS: New script loaded after existing UI scripts
+PASS: No SQL or database migration added
+PASS: Existing RBAC and Customer Access functions reused
+PASS: Customer prefill targets active negotiation page
+NOT RUN: Runtime test on user's XAMPP and MariaDB

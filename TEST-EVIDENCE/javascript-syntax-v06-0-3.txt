@@ -1,0 +1,15 @@
+PASS assets/js/cache-scope.js
+PASS assets/js/excel-import.js
+PASS assets/js/modal.js
+PASS assets/js/navigation.js
+PASS assets/js/notifications.js
+PASS assets/js/planning-tasks-integration.js
+PASS assets/js/planning.js
+PASS assets/js/ui.js
+PASS assets/js/users-rbac.js
+PASS assets/js/v04-1-final.js
+PASS assets/js/v04-1-manager.js
+PASS assets/js/v04-pages.js
+PASS assets/js/v05-app.js
+PASS assets/vendor/jszip/jszip.js
+SUMMARY PASS=14 FAIL=0

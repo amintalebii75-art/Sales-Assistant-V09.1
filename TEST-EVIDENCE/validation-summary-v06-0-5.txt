@@ -1,0 +1,9 @@
+V06.0.5 validation summary
+PHP syntax: PASS
+JavaScript syntax: PASS
+V05.2 policy: PASS
+V06 policy: PASS
+V06.0.3 security regression: PASS
+V06.0.4 Jalali regression: PASS
+V06.0.5 team result/handoff/font: PASS 7/7
+Real browser/XAMPP validation for V06.0.5: NOT RUN

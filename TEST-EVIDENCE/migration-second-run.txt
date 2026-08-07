@@ -1,0 +1,4 @@
+V06 MIGRATION — SECOND RUN / IDEMPOTENCY
+Status: NOT RUN
+Reason: The first real database run could not be performed in this environment.
+Static migration policy checks passed, but real MySQL/MariaDB idempotency is not validated.

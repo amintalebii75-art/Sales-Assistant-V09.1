@@ -1,0 +1,356 @@
+{
+  "pass": 70,
+  "fail": 0,
+  "refs": [
+    {
+      "source": "account_review.php",
+      "path": "assets/css/tokens.css",
+      "status": "PASS"
+    },
+    {
+      "source": "account_review.php",
+      "path": "assets/css/base.css",
+      "status": "PASS"
+    },
+    {
+      "source": "account_review.php",
+      "path": "assets/css/components.css",
+      "status": "PASS"
+    },
+    {
+      "source": "account_review.php",
+      "path": "assets/css/compat-login.css",
+      "status": "PASS"
+    },
+    {
+      "source": "account_review.php",
+      "path": "assets/js/cache-scope.js",
+      "status": "PASS"
+    },
+    {
+      "source": "change_password.php",
+      "path": "assets/css/tokens.css",
+      "status": "PASS"
+    },
+    {
+      "source": "change_password.php",
+      "path": "assets/css/base.css",
+      "status": "PASS"
+    },
+    {
+      "source": "change_password.php",
+      "path": "assets/css/components.css",
+      "status": "PASS"
+    },
+    {
+      "source": "change_password.php",
+      "path": "assets/css/v05-rbac.css",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/css/compat-index.css",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/css/tokens.css",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/css/base.css",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/css/components.css",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/css/layout.css",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/css/pages.css",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/css/responsive.css",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/css/v04-product.css",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/css/v04-1-final.css",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/css/excel-import.css",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/css/v05-rbac.css",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/js/ui.js",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/js/navigation.js",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/js/modal.js",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/js/notifications.js",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/js/v04-pages.js",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/js/v04-1-final.js",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/vendor/jszip/jszip.js",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/js/excel-import.js",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/js/v05-app.js",
+      "status": "PASS"
+    },
+    {
+      "source": "index.php",
+      "path": "assets/js/planning-tasks-integration.js",
+      "status": "PASS"
+    },
+    {
+      "source": "login.php",
+      "path": "assets/css/compat-login.css",
+      "status": "PASS"
+    },
+    {
+      "source": "login.php",
+      "path": "assets/css/tokens.css",
+      "status": "PASS"
+    },
+    {
+      "source": "login.php",
+      "path": "assets/css/base.css",
+      "status": "PASS"
+    },
+    {
+      "source": "login.php",
+      "path": "assets/css/components.css",
+      "status": "PASS"
+    },
+    {
+      "source": "login.php",
+      "path": "assets/css/layout.css",
+      "status": "PASS"
+    },
+    {
+      "source": "login.php",
+      "path": "assets/css/pages.css",
+      "status": "PASS"
+    },
+    {
+      "source": "login.php",
+      "path": "assets/css/responsive.css",
+      "status": "PASS"
+    },
+    {
+      "source": "login.php",
+      "path": "assets/css/v04-product.css",
+      "status": "PASS"
+    },
+    {
+      "source": "login.php",
+      "path": "assets/css/v04-1-final.css",
+      "status": "PASS"
+    },
+    {
+      "source": "login.php",
+      "path": "assets/css/v05-rbac.css",
+      "status": "PASS"
+    },
+    {
+      "source": "login.php",
+      "path": "assets/js/cache-scope.js",
+      "status": "PASS"
+    },
+    {
+      "source": "logout.php",
+      "path": "assets/js/cache-scope.js",
+      "status": "PASS"
+    },
+    {
+      "source": "manager.php",
+      "path": "assets/css/tokens.css",
+      "status": "PASS"
+    },
+    {
+      "source": "manager.php",
+      "path": "assets/css/base.css",
+      "status": "PASS"
+    },
+    {
+      "source": "manager.php",
+      "path": "assets/css/components.css",
+      "status": "PASS"
+    },
+    {
+      "source": "manager.php",
+      "path": "assets/css/layout.css",
+      "status": "PASS"
+    },
+    {
+      "source": "manager.php",
+      "path": "assets/css/pages.css",
+      "status": "PASS"
+    },
+    {
+      "source": "manager.php",
+      "path": "assets/css/responsive.css",
+      "status": "PASS"
+    },
+    {
+      "source": "manager.php",
+      "path": "assets/css/v04-product.css",
+      "status": "PASS"
+    },
+    {
+      "source": "manager.php",
+      "path": "assets/css/v04-1-final.css",
+      "status": "PASS"
+    },
+    {
+      "source": "manager.php",
+      "path": "assets/css/v05-rbac.css",
+      "status": "PASS"
+    },
+    {
+      "source": "planning.php",
+      "path": "assets/css/tokens.css",
+      "status": "PASS"
+    },
+    {
+      "source": "planning.php",
+      "path": "assets/css/base.css",
+      "status": "PASS"
+    },
+    {
+      "source": "planning.php",
+      "path": "assets/css/components.css",
+      "status": "PASS"
+    },
+    {
+      "source": "planning.php",
+      "path": "assets/css/layout.css",
+      "status": "PASS"
+    },
+    {
+      "source": "planning.php",
+      "path": "assets/css/pages.css",
+      "status": "PASS"
+    },
+    {
+      "source": "planning.php",
+      "path": "assets/css/responsive.css",
+      "status": "PASS"
+    },
+    {
+      "source": "planning.php",
+      "path": "assets/css/v05-rbac.css",
+      "status": "PASS"
+    },
+    {
+      "source": "planning.php",
+      "path": "assets/css/planning.css",
+      "status": "PASS"
+    },
+    {
+      "source": "planning.php",
+      "path": "assets/js/planning.js",
+      "status": "PASS"
+    },
+    {
+      "source": "users.php",
+      "path": "assets/css/tokens.css",
+      "status": "PASS"
+    },
+    {
+      "source": "users.php",
+      "path": "assets/css/base.css",
+      "status": "PASS"
+    },
+    {
+      "source": "users.php",
+      "path": "assets/css/components.css",
+      "status": "PASS"
+    },
+    {
+      "source": "users.php",
+      "path": "assets/css/layout.css",
+      "status": "PASS"
+    },
+    {
+      "source": "users.php",
+      "path": "assets/css/pages.css",
+      "status": "PASS"
+    },
+    {
+      "source": "users.php",
+      "path": "assets/css/responsive.css",
+      "status": "PASS"
+    },
+    {
+      "source": "users.php",
+      "path": "assets/css/v04-product.css",
+      "status": "PASS"
+    },
+    {
+      "source": "users.php",
+      "path": "assets/css/v04-1-final.css",
+      "status": "PASS"
+    },
+    {
+      "source": "users.php",
+      "path": "assets/css/v05-rbac.css",
+      "status": "PASS"
+    },
+    {
+      "source": "users.php",
+      "path": "assets/js/users-rbac.js",
+      "status": "PASS"
+    }
+  ]
+}

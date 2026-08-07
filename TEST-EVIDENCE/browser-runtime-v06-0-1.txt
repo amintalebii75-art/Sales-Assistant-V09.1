@@ -1,0 +1,10 @@
+V06.0.1 AUTHENTICATED BROWSER RUNTIME
+STATUS: NOT RUN
+
+Reason:
+A real database and authenticated Manager/Marketer/Center Call test accounts were unavailable. No authenticated cancelled-assignment UI flow or screenshot was produced.
+
+PHP HTTP checks actually executed:
+- login.php: HTTP 200
+- planning.php without session: HTTP 302 to login.php
+- planning_api.php without session: HTTP 401

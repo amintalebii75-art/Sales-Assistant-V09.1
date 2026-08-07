@@ -1,0 +1,26 @@
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/account_review.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/ai.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/ai_config.sample.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/ai_provider.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/ai_provider_arvancloud.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/ai_provider_openai.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/ai_service.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/api.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/auth.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/change_password.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/config.sample.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/create_admin.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/db.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/index.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/login.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/logout.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/manager.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/permissions.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/planning.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/planning_api.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/planning_policy.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/tests/v05_2_policy_tests.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/tests/v06_policy_tests.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/users.php
+No syntax errors detected in /mnt/data/v0601_work/Sales-Assistant-V06-0-1-Planning-Security-Fix/users_api.php
+TOTAL_PASS=25

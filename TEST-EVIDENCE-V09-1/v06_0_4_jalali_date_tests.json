@@ -1,0 +1,8 @@
+PASS | shared Jalali asset loaded | planning assets loaded
+PASS | native planning date inputs removed | no native date input
+PASS | planning date selectors are Jalali | week/task selectors
+PASS | planning month selectors are Jalali | create/copy month
+PASS | Jalali month key accepted server-side | new plus legacy keys
+PASS | mixed legacy and Jalali plans sort by id | latest plan ordering preserved
+PASS | daily dates remain ISO hidden values | ISO backend contract
+PASS | explicit Persian calendar display | Persian calendar locale

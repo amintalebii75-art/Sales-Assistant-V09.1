@@ -1,0 +1,42 @@
+# Security rules for Apache/XAMPP and shared production hosting.
+Options -Indexes
+DirectoryIndex login.php index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^(?:tests|TEST-EVIDENCE)(?:/|$) - [F,L,NC]
+  RewriteRule ^(?:\.git|\.svn|\.hg)(?:/|$) - [F,L,NC]
+</IfModule>
+
+# Never serve configuration, migrations, reports or evidence files directly.
+<FilesMatch "^(config\.php|ai_config\.php|\.env|composer\.(json|lock)|package(-lock)?\.json|.*\.(sql|md|json|txt|log|ini|env))$">
+  Require all denied
+</FilesMatch>
+
+# Service worker and manifest must be reachable and refreshed quickly.
+<FilesMatch "^(sw\.js|manifest\.webmanifest)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, must-revalidate"
+  </IfModule>
+</FilesMatch>
+
+# Authenticated PHP responses must never be stored by browser/proxy caches.
+<FilesMatch "\.php$">
+  <IfModule mod_headers.c>
+    Header always set Cache-Control "no-store, no-cache, must-revalidate, private, max-age=0"
+    Header always set Pragma "no-cache"
+    Header always set Expires "0"
+  </IfModule>
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Content-Security-Policy "frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+</IfModule>

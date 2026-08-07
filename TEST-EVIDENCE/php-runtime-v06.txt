@@ -1,0 +1,5 @@
+V06 PHP runtime — sanitized
+GET /login.php HTTP=200 EXPECTED=200 BODY_BYTES=2091
+GET /planning.php HTTP=302 EXPECTED=302 BODY_BYTES=0
+POST /planning_api.php without session HTTP=401 EXPECTED=401 BODY={"ok":false,"error":"not_logged_in"}
+SERVER_REQUESTS: login=200 planning=302 api=401

@@ -1,0 +1,20 @@
+PHP_SERVER=php -S 127.0.0.1:8766
+LOGIN_STATUS=200
+PLANNING_STATUS=302
+PLANNING_LOCATION=login.php
+API_STATUS=401
+API_BODY={"ok":false,"error":"not_logged_in"}
+--- server log ---
+[Sun Jul 26 05:31:40 2026] PHP 8.4.16 Development Server (http://127.0.0.1:8766) started
+[Sun Jul 26 05:31:41 2026] 127.0.0.1:54272 Accepted
+[Sun Jul 26 05:31:41 2026] 127.0.0.1:54272 [200]: GET /login.php
+[Sun Jul 26 05:31:41 2026] 127.0.0.1:54272 Closing
+[Sun Jul 26 05:31:41 2026] 127.0.0.1:54274 Accepted
+[Sun Jul 26 05:31:41 2026] 127.0.0.1:54274 [302]: GET /planning.php
+[Sun Jul 26 05:31:41 2026] 127.0.0.1:54274 Closing
+[Sun Jul 26 05:31:41 2026] 127.0.0.1:54286 Accepted
+[Sun Jul 26 05:31:41 2026] 127.0.0.1:54286 [302]: HEAD /planning.php
+[Sun Jul 26 05:31:41 2026] 127.0.0.1:54286 Closing
+[Sun Jul 26 05:31:41 2026] 127.0.0.1:54288 Accepted
+[Sun Jul 26 05:31:41 2026] 127.0.0.1:54288 [401]: POST /planning_api.php?action=bootstrap
+[Sun Jul 26 05:31:41 2026] 127.0.0.1:54288 Closing

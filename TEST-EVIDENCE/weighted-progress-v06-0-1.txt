@@ -1,0 +1,12 @@
+V06.0.1 WEIGHTED PROGRESS POLICY TEST
+STATUS: PASS (PHP policy runtime)
+
+Input:
+- Assignment A: 100
+- Nine assignments: 0 each
+- Cancelled assignments: excluded
+
+Expected: 10
+Actual: 10
+
+Real MySQL summary query runtime: NOT RUN.

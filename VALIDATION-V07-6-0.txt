@@ -1,0 +1,9 @@
+V07.6.0 validation
+
+PASS: users.php PHP syntax
+PASS: users-rbac.js JavaScript syntax
+PASS: new stylesheet present and referenced
+PASS: standalone preview opens without backend
+PASS: archive excludes config.php and font binaries
+NOT RUN: XAMPP runtime with real database and sessions
+NOT RUN: mobile browser runtime on physical device

@@ -1,0 +1,11 @@
+V06.0.1 COPY PLAN POLICY
+STATUS: PASS (static regression)
+
+- Only tasks with status=active pass the copy filter.
+- cancelled tasks are excluded.
+- archived tasks are excluded.
+- assignments_copied=false remains explicit.
+- new task due_date is NULL.
+- new week start_date/end_date are NULL.
+
+Real MySQL copy runtime: NOT RUN.

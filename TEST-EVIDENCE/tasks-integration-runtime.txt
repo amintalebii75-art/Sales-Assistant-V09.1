@@ -1,0 +1,5 @@
+V06 CURRENT-TASKS INTEGRATION RUNTIME VALIDATION
+Status: NOT RUN
+Reason: No authenticated database-backed account was available.
+Static checks confirmed source=monthly_plan, shared assignment source of truth, and update_my_assignment usage.
+No claim of end-to-end UI synchronization is made.

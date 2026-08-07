@@ -1,0 +1,5 @@
+V06 MIGRATION — FIRST REAL DATABASE RUN
+Status: NOT RUN
+File: v06_four_week_planning_migration.sql
+Reason: No MySQL/MariaDB server or client and no PHP pdo_mysql/mysqli driver is available.
+No SQL statement was executed. No migration success is claimed.

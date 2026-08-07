@@ -1,0 +1,42 @@
+@font-face{font-family:"IRANSansXFaNum";src:local("IRANSansXFaNum Regular"),local("IRANSansXFaNum"),url("../fonts/IRANSansXFaNum-Regular.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"IRANSansXFaNum";src:local("IRANSansXFaNum Medium"),url("../fonts/IRANSansXFaNum-Medium.ttf") format("truetype");font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:"IRANSansXFaNum";src:local("IRANSansXFaNum DemiBold"),url("../fonts/IRANSansXFaNum-DemiBold.ttf") format("truetype");font-style:normal;font-weight:600;font-display:swap}
+@font-face{font-family:"IRANSansXFaNum";src:local("IRANSansXFaNum Bold"),url("../fonts/IRANSansXFaNum-Bold.ttf") format("truetype");font-style:normal;font-weight:700 900;font-display:swap}
+:root{
+  --color-primary:#8f2f3d;
+  --color-primary-hover:#742532;
+  --color-primary-soft:#f8ecee;
+  --color-bg:#f6f6f4;
+  --color-surface:#ffffff;
+  --color-surface-alt:#faf9f7;
+  --color-border:#e3e1dd;
+  --color-border-strong:#cbc7c1;
+  --color-text:#242321;
+  --color-text-muted:#625f5a;
+  --color-success:#24734e;
+  --color-success-soft:#eaf5ef;
+  --color-warning:#9a6518;
+  --color-warning-soft:#fff5e5;
+  --color-danger:#b4232f;
+  --color-danger-soft:#fcecef;
+  --color-info:#386c91;
+  --color-info-soft:#edf5fa;
+  --font-family:"IRANSansXFaNum",Tahoma,"Segoe UI",Arial,sans-serif;
+  --font-xs:12px;--font-sm:14px;--font-md:14px;--font-lg:16px;--font-xl:20px;--font-2xl:26px;
+  --weight-regular:400;--weight-medium:600;--weight-bold:700;
+  --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-8:32px;
+  --radius-sm:8px;--radius-md:10px;--radius-lg:12px;
+  --control-height:44px;--sidebar-width:264px;--sidebar-collapsed:76px;
+  --z-header:40;--z-mobile-nav:55;--z-drawer:70;--z-modal:90;--z-toast:110;
+  --bp-mobile:650px;--bp-tablet:900px;--bp-desktop:1200px;
+  --shadow-soft:0 1px 2px rgba(32,30,27,.04);
+  --shadow-float:0 12px 32px rgba(32,30,27,.12);
+  /* Compatibility aliases used by the existing application. */
+  --bg:var(--color-bg);--surface:var(--color-surface);--surface2:var(--color-surface-alt);
+  --ink:var(--color-text);--muted:var(--color-text-muted);--brand:var(--color-primary);
+  --brand2:var(--color-primary);--brandSoft:var(--color-primary-soft);--navy:#353230;
+  --line:var(--color-border);--warn:var(--color-warning);--warnSoft:var(--color-warning-soft);
+  --danger:var(--color-danger);--dangerSoft:var(--color-danger-soft);--ok:var(--color-success);
+  --okSoft:var(--color-success-soft);--blue:var(--color-info);--blueSoft:var(--color-info-soft);
+  --shadow:var(--shadow-soft);--radius:var(--radius-lg);
+}

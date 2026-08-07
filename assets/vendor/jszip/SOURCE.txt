@@ -1,0 +1,6 @@
+JSZip 3.10.1
+Source: https://github.com/Stuk/jszip
+Local vendored browser build: dist/jszip.js
+License choice used in this project: MIT
+Purpose: read the ZIP container used by .xlsx files entirely in the browser.
+No spreadsheet file is uploaded to the server by this component.

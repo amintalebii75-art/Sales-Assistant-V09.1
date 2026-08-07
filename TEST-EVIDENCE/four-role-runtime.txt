@@ -1,0 +1,7 @@
+V06 FOUR-ROLE RUNTIME VALIDATION
+Manager: NOT RUN
+Marketer: NOT RUN
+Center Call: NOT RUN
+Manager Viewer: NOT RUN
+Reason: A real MySQL/MariaDB database and authenticated test accounts were unavailable.
+Static role/permission policy checks passed; this is not a substitute for runtime role validation.

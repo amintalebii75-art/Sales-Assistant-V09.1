@@ -1,0 +1,117 @@
+{
+    "suite": "V09 Host Pilot/PWA Complete",
+    "pass": 22,
+    "fail": 0,
+    "results": [
+        {
+            "name": "Customer Access View is a hard ceiling",
+            "status": "PASS",
+            "detail": "no implicit View→Call upgrade"
+        },
+        {
+            "name": "Customer Access Call remains usable",
+            "status": "PASS",
+            "detail": "explicit manager grant required"
+        },
+        {
+            "name": "View interaction is rejected server-side",
+            "status": "PASS",
+            "detail": "center call cannot write with view-only grant"
+        },
+        {
+            "name": "Call interaction supports multiple allowed results",
+            "status": "PASS",
+            "detail": "multi-select preserved"
+        },
+        {
+            "name": "required file: manifest.webmanifest",
+            "status": "PASS",
+            "detail": "manifest.webmanifest"
+        },
+        {
+            "name": "required file: sw.js",
+            "status": "PASS",
+            "detail": "sw.js"
+        },
+        {
+            "name": "required file: offline.html",
+            "status": "PASS",
+            "detail": "offline.html"
+        },
+        {
+            "name": "required file: assets/js/pwa.js",
+            "status": "PASS",
+            "detail": "assets/js/pwa.js"
+        },
+        {
+            "name": "required file: assets/css/pwa.css",
+            "status": "PASS",
+            "detail": "assets/css/pwa.css"
+        },
+        {
+            "name": "required file: assets/icons/icon-192.png",
+            "status": "PASS",
+            "detail": "assets/icons/icon-192.png"
+        },
+        {
+            "name": "required file: assets/icons/icon-512.png",
+            "status": "PASS",
+            "detail": "assets/icons/icon-512.png"
+        },
+        {
+            "name": "required file: deployment_check.php",
+            "status": "PASS",
+            "detail": "deployment_check.php"
+        },
+        {
+            "name": "required file: pilot_issues.php",
+            "status": "PASS",
+            "detail": "pilot_issues.php"
+        },
+        {
+            "name": "required file: config.production.sample.php",
+            "status": "PASS",
+            "detail": "config.production.sample.php"
+        },
+        {
+            "name": "Service worker does not cache PHP/API",
+            "status": "PASS",
+            "detail": "authenticated pages are network-only"
+        },
+        {
+            "name": "PHP cache-control hardening",
+            "status": "PASS",
+            "detail": "Apache security headers"
+        },
+        {
+            "name": "PHP no-store fallback headers",
+            "status": "PASS",
+            "detail": "works when mod_headers is unavailable"
+        },
+        {
+            "name": "Center Call order/pipeline menus are hidden",
+            "status": "PASS",
+            "detail": "call center stays in customer/call workflow"
+        },
+        {
+            "name": "Deployment check is manager-only",
+            "status": "PASS",
+            "detail": "read-only manager gate"
+        },
+        {
+            "name": "Pilot issue log is browser-local",
+            "status": "PASS",
+            "detail": "no customer data write"
+        },
+        {
+            "name": "Real config is not bundled",
+            "status": "PASS",
+            "detail": "sample files only"
+        },
+        {
+            "name": "Unsafe create_admin is not bundled",
+            "status": "PASS",
+            "detail": "existing manager workflow preserved"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+V07.2.0 validation
+
+Scope:
+- Customers pipeline renderer in index.php
+- Standalone pipeline renderer in assets/js/v04-pages.js
+- Pipeline visuals in assets/css/v07-ariana.css
+
+Expected behavior:
+- 8 official stages rendered.
+- Stage count visible.
+- Customers sorted by nextFollowUp ascending.
+- No-follow-up customers placed last.
+- Review status/score, owner and follow-up visible.
+- Customer name opens the customer detail.
+- No database migration required.

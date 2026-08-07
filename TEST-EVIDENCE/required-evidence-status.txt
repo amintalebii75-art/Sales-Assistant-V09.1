@@ -1,0 +1,21 @@
+V06 REQUIRED TEST-EVIDENCE STATUS
+migration-first-run.txt: NOT RUN — no MySQL/MariaDB
+migration-second-run.txt: NOT RUN — no MySQL/MariaDB
+manager-month-view.png: NOT CREATED — Browser/authenticated Manager runtime BLOCKED/NOT RUN
+manager-week-view.png: NOT CREATED — Browser/authenticated Manager runtime BLOCKED/NOT RUN
+create-plan.png: NOT CREATED — database-backed Manager runtime NOT RUN
+create-task.png: NOT CREATED — database-backed Manager runtime NOT RUN
+assign-one-user.png: NOT CREATED — database-backed Manager runtime NOT RUN
+assign-multiple-users.png: NOT CREATED — database-backed Manager runtime NOT RUN
+assign-everyone.png: NOT CREATED — database-backed eligible users unavailable
+team-progress.png: NOT CREATED — four-role runtime NOT RUN
+marketer-personal-plan.png: NOT CREATED — authenticated Marketer runtime NOT RUN
+marketer-task-update.png: NOT CREATED — authenticated Marketer runtime NOT RUN
+center-call-plan.png: NOT CREATED — authenticated Center Call runtime NOT RUN
+manager-viewer-summary.png: NOT CREATED — authenticated Manager Viewer runtime NOT RUN
+forbidden-assignment-update.png: NOT CREATED — authenticated cross-user runtime NOT RUN
+csrf-denied.png: NOT CREATED — authenticated CSRF runtime NOT RUN
+concurrent-update-conflict.png: NOT CREATED — two-session database runtime NOT RUN
+tasks-integration.png: NOT CREATED — authenticated integration runtime NOT RUN
+mobile-plan.png: NOT CREATED — Browser UI runtime BLOCKED
+No fabricated image or browser screenshot is included.

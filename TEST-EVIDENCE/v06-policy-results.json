@@ -1,0 +1,181 @@
+{
+    "pass": 35,
+    "fail": 0,
+    "tests": [
+        {
+            "name": "permission keys registered",
+            "status": "PASS",
+            "detail": "9 planning permissions"
+        },
+        {
+            "name": "manager planning defaults",
+            "status": "PASS",
+            "detail": "manager defaults complete"
+        },
+        {
+            "name": "marketer own-only defaults",
+            "status": "PASS",
+            "detail": "own only"
+        },
+        {
+            "name": "center-call own-only defaults",
+            "status": "PASS",
+            "detail": "own only"
+        },
+        {
+            "name": "manager-viewer summary-only defaults",
+            "status": "PASS",
+            "detail": "summary only"
+        },
+        {
+            "name": "override false revokes immediately",
+            "status": "PASS",
+            "detail": "revoked"
+        },
+        {
+            "name": "inactive account denied",
+            "status": "PASS",
+            "detail": "inactive blocked"
+        },
+        {
+            "name": "operational account requires team member",
+            "status": "PASS",
+            "detail": "team member required"
+        },
+        {
+            "name": "fingerprint changes with planning override",
+            "status": "PASS",
+            "detail": "cache invalidation covered"
+        },
+        {
+            "name": "fingerprint changes with team member",
+            "status": "PASS",
+            "detail": "team scope covered"
+        },
+        {
+            "name": "migration table monthly_plans",
+            "status": "PASS",
+            "detail": "present"
+        },
+        {
+            "name": "migration table monthly_plan_weeks",
+            "status": "PASS",
+            "detail": "present"
+        },
+        {
+            "name": "migration table monthly_plan_tasks",
+            "status": "PASS",
+            "detail": "present"
+        },
+        {
+            "name": "migration table monthly_task_assignments",
+            "status": "PASS",
+            "detail": "present"
+        },
+        {
+            "name": "migration idempotent permissions",
+            "status": "PASS",
+            "detail": "idempotent insert"
+        },
+        {
+            "name": "migration no sample data",
+            "status": "PASS",
+            "detail": "no sample records"
+        },
+        {
+            "name": "assignment uniqueness",
+            "status": "PASS",
+            "detail": "one assignment per task/user"
+        },
+        {
+            "name": "week uniqueness and range",
+            "status": "PASS",
+            "detail": "week constrained"
+        },
+        {
+            "name": "optimistic locking columns",
+            "status": "PASS",
+            "detail": "4 revisions"
+        },
+        {
+            "name": "guarded rollback",
+            "status": "PASS",
+            "detail": "data-aware rollback"
+        },
+        {
+            "name": "API session guard",
+            "status": "PASS",
+            "detail": "session required"
+        },
+        {
+            "name": "API CSRF guard",
+            "status": "PASS",
+            "detail": "CSRF required"
+        },
+        {
+            "name": "API prepared statements",
+            "status": "PASS",
+            "detail": "prepared statements used"
+        },
+        {
+            "name": "API transaction coverage",
+            "status": "PASS",
+            "detail": "transactions used"
+        },
+        {
+            "name": "API conflict response",
+            "status": "PASS",
+            "detail": "optimistic locking"
+        },
+        {
+            "name": "personal assignment bound to session user",
+            "status": "PASS",
+            "detail": "server identity enforced"
+        },
+        {
+            "name": "manager assignment management is role-gated and revisioned",
+            "status": "PASS",
+            "detail": "manager endpoint protected"
+        },
+        {
+            "name": "manager assignment update preserves user note",
+            "status": "PASS",
+            "detail": "user note preserved"
+        },
+        {
+            "name": "viewer summary excludes private notes",
+            "status": "PASS",
+            "detail": "summary redacted"
+        },
+        {
+            "name": "eligible users exclude unsafe accounts",
+            "status": "PASS",
+            "detail": "active operational users only"
+        },
+        {
+            "name": "everyone assignment preview exists",
+            "status": "PASS",
+            "detail": "recipient preview"
+        },
+        {
+            "name": "task integration has monthly source",
+            "status": "PASS",
+            "detail": "single source assignment update"
+        },
+        {
+            "name": "planning page permission gate",
+            "status": "PASS",
+            "detail": "permission gated page"
+        },
+        {
+            "name": "UI output escaping",
+            "status": "PASS",
+            "detail": "escaped rendering"
+        },
+        {
+            "name": "no baseline AI changes in V06 files",
+            "status": "PASS",
+            "detail": "scope preserved"
+        }
+    ]
+}

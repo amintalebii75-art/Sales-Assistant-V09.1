@@ -1,0 +1,50 @@
+generated_at=2026-08-04T00:16:10Z
+PHP 8.4.16 (cli) (built: Dec 18 2025 21:19:25) (NTS)
+v22.16.0
+php_modules:
+
+
+Core
+FFI
+PDO
+Phar
+Reflection
+SPL
+Zend OPcache
+Zend OPcache
+[PHP Modules]
+[Zend Modules]
+calendar
+ctype
+date
+exif
+fileinfo
+filter
+ftp
+gettext
+hash
+iconv
+json
+libxml
+openssl
+pcntl
+pcre
+posix
+random
+readline
+session
+shmop
+sockets
+sodium
+standard
+sysvmsg
+sysvsem
+sysvshm
+tokenizer
+zlib
+mysql_client=NOT_AVAILABLE
+mariadb_client=NOT_AVAILABLE
+pdo_mysql=NOT_AVAILABLE
+mbstring=NOT_AVAILABLE
+chromium=/usr/bin/chromium
+browser_navigation=BLOCKED (net::ERR_BLOCKED_BY_ADMINISTRATOR)

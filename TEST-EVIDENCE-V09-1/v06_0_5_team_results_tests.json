@@ -1,0 +1,42 @@
+{
+    "suite": "V06.0.5 Team Results, Handoff and Font",
+    "pass": 7,
+    "fail": 0,
+    "results": [
+        {
+            "name": "manager/sales-manager add button exists",
+            "status": "PASS",
+            "detail": "role-aware plus button"
+        },
+        {
+            "name": "reply option API is CSRF and revision protected",
+            "status": "PASS",
+            "detail": "CSRF + revision + backup + audit"
+        },
+        {
+            "name": "center call receives manager-created team option",
+            "status": "PASS",
+            "detail": "teamVisible option included"
+        },
+        {
+            "name": "center call can submit manager-created team option",
+            "status": "PASS",
+            "detail": "dynamic option accepted by backend"
+        },
+        {
+            "name": "center call still cannot submit purchase outcome",
+            "status": "PASS",
+            "detail": "purchase remains blocked"
+        },
+        {
+            "name": "call-center interaction creates marketer handoff task",
+            "status": "PASS",
+            "detail": "task assigned to customer marketer"
+        },
+        {
+            "name": "font stylesheet targets IRANSansXFaNum without bundled binaries",
+            "status": "PASS",
+            "detail": "font references and copy instructions only"
+        }
+    ]
+}

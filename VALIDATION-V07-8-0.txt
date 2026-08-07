@@ -1,0 +1,7 @@
+PHP pilot_test.php: No syntax errors detected in /mnt/data/Sales-Assistant-V07-8-0-Pilot-Smoke-Test-Release/pilot_test.php
+PHP index.php: No syntax errors detected in /mnt/data/Sales-Assistant-V07-8-0-Pilot-Smoke-Test-Release/index.php
+PHP manager.php: No syntax errors detected in /mnt/data/Sales-Assistant-V07-8-0-Pilot-Smoke-Test-Release/manager.php
+JS v07-pilot-test.js: OK
+Database migration: NOT REQUIRED
+config.php: intentionally omitted
+font binaries: intentionally omitted

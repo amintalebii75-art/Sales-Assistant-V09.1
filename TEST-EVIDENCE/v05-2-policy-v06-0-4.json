@@ -1,0 +1,174 @@
+{
+    "suite": "V05.2 RBAC Data Boundary",
+    "generated_at": "2026-08-04T12:12:44+00:00",
+    "environment": {
+        "php": "8.4.16",
+        "database": "not used; pure policy/static tests"
+    },
+    "pass": 27,
+    "fail": 0,
+    "results": [
+        {
+            "id": "FS-01",
+            "title": "مدیر با View و Save کامل می‌تواند Full-State ذخیره کند",
+            "status": "PASS",
+            "detail": "manager + state.view_full + state.save_full"
+        },
+        {
+            "id": "FS-02",
+            "title": "مدیر با View و بدون Save نمی‌تواند Full-State ذخیره کند",
+            "status": "PASS",
+            "detail": "view-only manager rejected for full save"
+        },
+        {
+            "id": "FS-03",
+            "title": "مدیر با Save و بدون View نمی‌تواند Full-State ذخیره کند",
+            "status": "PASS",
+            "detail": "save-only manager rejected for full save"
+        },
+        {
+            "id": "FS-04",
+            "title": "Override غیرمدیر مرز سازمانی را دور نمی‌زند",
+            "status": "PASS",
+            "detail": "real manager role remains mandatory"
+        },
+        {
+            "id": "FS-05",
+            "title": "مالک Interaction در Full-State فقط سمت سرور تعیین می‌شود",
+            "status": "PASS",
+            "detail": "existing owner preserved; new owner set from authenticated session"
+        },
+        {
+            "id": "CF-01",
+            "title": "Field-Level مشتری در سطح Call فقط فیلدهای تماس را می‌فرستد",
+            "status": "PASS",
+            "detail": "id, name, company, contact, phone, phone2, city, province, industry, product, stage, nextFollowUp, status, assignee, _accessLevel, _ownerSelf"
+        },
+        {
+            "id": "CF-02",
+            "title": "Field-Level مشتری در سطح View از Call محدودتر است",
+            "status": "PASS",
+            "detail": "id, name, company, city, province, industry, product, stage, nextFollowUp, status, assignee, _accessLevel, _ownerSelf"
+        },
+        {
+            "id": "CF-03",
+            "title": "customer_access=call سقف customers.edit_all است",
+            "status": "PASS",
+            "detail": "call ceiling preserved despite customers.edit_all"
+        },
+        {
+            "id": "IF-01",
+            "title": "تعامل Call فاقد سفارش، Fulfillment و مالی است",
+            "status": "PASS",
+            "detail": "id, customerId, date, channel, resultIds, note, nextFollowUp, duration, status, memberId, _accessLevel, _ownerSelf"
+        },
+        {
+            "id": "IF-02",
+            "title": "تعامل View فقط خلاصه لازم را دارد",
+            "status": "PASS",
+            "detail": "id, customerId, date, channel, resultIds, status, memberId, _accessLevel, _ownerSelf"
+        },
+        {
+            "id": "IF-03",
+            "title": "Payload سفارش جعلی در سطح Call رد می‌شود",
+            "status": "PASS",
+            "detail": "fulfillment and orderValue rejected"
+        },
+        {
+            "id": "IF-04",
+            "title": "Result خرید جعلی در سطح Call رد می‌شود",
+            "status": "PASS",
+            "detail": "purchase result rejected"
+        },
+        {
+            "id": "SM-01",
+            "title": "Scoped Merge مشتری پنهان، Formula و Settings را حفظ می‌کند",
+            "status": "PASS",
+            "detail": "omitted organization data preserved"
+        },
+        {
+            "id": "SM-02",
+            "title": "Call fields change while Stage/Source/Assignee remain unchanged",
+            "status": "PASS",
+            "detail": "allowed patch applied; sensitive fields stripped"
+        },
+        {
+            "id": "SM-03",
+            "title": "کاربر View نمی‌تواند Interaction ثبت کند",
+            "status": "PASS",
+            "detail": "view blocked"
+        },
+        {
+            "id": "SM-04",
+            "title": "Interaction متعلق به کاربر دیگر قابل ویرایش نیست",
+            "status": "PASS",
+            "detail": "ownership enforced"
+        },
+        {
+            "id": "SM-05",
+            "title": "حذف Interaction برای غیرمدیر با omission انجام نمی‌شود",
+            "status": "PASS",
+            "detail": "server retained all existing interactions"
+        },
+        {
+            "id": "SM-06",
+            "title": "Revoke دسترسی بلافاصله ثبت تعامل را متوقف می‌کند",
+            "status": "PASS",
+            "detail": "no access row, no operation"
+        },
+        {
+            "id": "TM-01",
+            "title": "حساب عملیاتی بدون Team Member مسدود است",
+            "status": "PASS",
+            "detail": "workspace and APIs blocked"
+        },
+        {
+            "id": "TM-02",
+            "title": "Team Member در Permission Fingerprint اثر می‌گذارد",
+            "status": "PASS",
+            "detail": "cache/session scope changes on relink"
+        },
+        {
+            "id": "TM-03",
+            "title": "Team Member نامعتبر حساب عملیاتی را مسدود می‌کند",
+            "status": "PASS",
+            "detail": "non-empty stale id is not enough"
+        },
+        {
+            "id": "SP-01",
+            "title": "Permission حساس بدون نقش واقعی Manager رد می‌شود",
+            "status": "PASS",
+            "detail": "override cannot create organization authority"
+        },
+        {
+            "id": "ST-01",
+            "title": "Backup/Restore دارای گارد Manager و Full-State است",
+            "status": "PASS",
+            "detail": "static endpoint guard verification"
+        },
+        {
+            "id": "ST-02",
+            "title": "Restore response خام Full-State برنمی‌گرداند",
+            "status": "PASS",
+            "detail": "response is metadata + revision + context token only"
+        },
+        {
+            "id": "ST-03",
+            "title": "Team Member linking در users_api نیازمند Manager است",
+            "status": "PASS",
+            "detail": "create and sensitive update guarded"
+        },
+        {
+            "id": "ST-04",
+            "title": "State context token و Fingerprint در Save بررسی می‌شوند",
+            "status": "PASS",
+            "detail": "load/save invariant present"
+        },
+        {
+            "id": "ST-05",
+            "title": "No-op Save مسیر افزایش Revision ندارد",
+            "status": "PASS",
+            "detail": "no-op exits before revision increment and backup"
+        }
+    ]
+}

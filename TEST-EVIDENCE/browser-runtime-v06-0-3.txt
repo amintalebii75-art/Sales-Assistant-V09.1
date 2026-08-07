@@ -1,0 +1,5 @@
+STATUS: BLOCKED
+Chromium executable and Playwright were available, but navigation to both HTTP loopback/container addresses and file:// was blocked by the environment policy with:
+net::ERR_BLOCKED_BY_ADMINISTRATOR
+
+Therefore authenticated and responsive browser validation was not claimed as PASS. HTTP behavior was tested separately with real PHP requests and recorded in http-runtime-v06-0-3.txt.
